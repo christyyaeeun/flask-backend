@@ -4,7 +4,7 @@ import json
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "https://main--aquamarine-capybara-eac2c1.netlify.app"}})
+CORS(app, resources={r"/api/*": {"origins": "https://aquamarine-capybara-eac2c1.netlify.app"}})
 # Serve the React build files from the 'client' directory
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
