@@ -1,0 +1,28 @@
+[
+ {
+  "firstName": "Christy",
+  "lastName": "Park",
+  "role": "admin",
+  "email": "christypark21@gmail.com",
+  "phoneNumber": "2149075029",
+  "attendanceStatus": "1"
+ },
+ {
+  "firstName": "Eddie",
+  "lastName": "Chan",
+  "role": "admin",
+  "email": "eddiecwh@gmail.com",
+  "attendanceStatus": "0"
+ },
+ {
+  "firstName": "Nadia",
+  "lastName": "Chan",
+  "role": "guest",
+  "attendanceStatus": "0"
+ },
+ {
+  "firstName": "Ashley",
+  "lastName": "Park",
+  "role": "guest"
+ }
+]
