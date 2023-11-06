@@ -3,8 +3,13 @@ from flask_cors import CORS
 import json
 import os
 
-app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "https://aquamarine-capybara-eac2c1.netlify.app"}})
+# app = Flask(__name__)
+# CORS(app, resources={r"/api/*": {"origins": "https://aquamarine-capybara-eac2c1.netlify.app"}})
+allowed_origins = [
+    "https://aquamarine-capybara-eac2c1.netlify.app",
+    "https://rsvp-auth.firebaseapp.com/?_gl=1*10esqj*_ga*NjM0MjE2MzM5LjE2OTg5NDI5MjQ.*_ga_CW55HF8NVT*MTY5OTI0NDk0MC45LjEuMTY5OTI0NTM3Ni40OC4wLjA."
+]
+CORS(app, resources={r"/api/*": {"origins": allowed_origins}})
 # Serve the React build files from the 'client' directory
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
